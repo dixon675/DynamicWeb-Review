@@ -30,8 +30,11 @@ header {
 main {
 	flex-grow: 1;
 	display: flex;
+	grid-row: 2;
 	justify-content: center;
 	align-items: center;
+	background-color: #162B32;
+	transition: background-color 0.5s ease;
 }
 
 .logo {
@@ -39,11 +42,6 @@ main {
 	width: 40px;
 	height: 40px;
 	background-size: 100%;
-}
-
-.title {
-	padding: 6px;
-	margin: 0;
 }
 
 nav ul {
@@ -77,6 +75,19 @@ footer {
 	text-align: right;
 }
 
+.joke {
+	cursor: pointer;
+}
+
 .joke h2:not(:first-child){
 	display:none;
+}
+
+#default, #j1, #j2, #j3, #a1, #a2, #a3 {
+	padding: 30px;
+	color:white;
+}
+
+.images {
+	size: 100%;
 }
